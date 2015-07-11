@@ -17,7 +17,7 @@ whois2array.whois("octozon.com", function (err, data) {
 ```
 
 ----
-## How to use:
+## How to install:
 ```
 npm install whois2array
 ```
