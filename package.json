@@ -1,6 +1,6 @@
 {
   "name": "whois2array",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Make array from whois",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,36 @@
     "array",
     "json"
   ],
-  "author": "Josep Subils Rigau <octozon@gmail.com> (http://octozon.com)",
+  "author": {
+    "name": "Josep Subils Rigau",
+    "email": "octozon@gmail.com",
+    "url": "http://octozon.com"
+  },
   "license": "GPL",
   "bugs": {
     "url": "https://github.com/warlock/whois2array/issues"
   },
-  "homepage": "https://github.com/warlock/whois2array#readme"
+  "homepage": "https://github.com/warlock/whois2array#readme",
+  "gitHead": "cfe90f00e0370d416b8983dc6a9eb9a037a2f555",
+  "_id": "whois2array@0.0.6",
+  "_shasum": "6ddb89e343a9b31a96371a74bc6f4bf8ae94face",
+  "_from": "whois2array@*",
+  "_npmVersion": "2.9.1",
+  "_nodeVersion": "0.12.3",
+  "_npmUser": {
+    "name": "josep",
+    "email": "octozon@gmail.com"
+  },
+  "dist": {
+    "shasum": "6ddb89e343a9b31a96371a74bc6f4bf8ae94face",
+    "tarball": "http://registry.npmjs.org/whois2array/-/whois2array-0.0.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "josep",
+      "email": "octozon@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/whois2array/-/whois2array-0.0.6.tgz"
 }

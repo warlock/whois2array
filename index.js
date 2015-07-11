@@ -1,27 +1,26 @@
 var spawn = require('child_process').spawn;
 
-exports.whois = function (domini, callback) {
-	var query = spawn('whois',  [domini]);
-	var domini = {};
+exports.whois = function (domain, callback) {
+	var query = spawn('whois', [domain]);
+	var domain = {};
+
 	query.stdout.setEncoding('utf8');
+
 	query.stdout.on('data', function (data) {
-                var str = data.toString();
-		var lines = str.split("\n");
-                for (var i in lines) {
+  var str = data.toString();
+	var lines = str.split("\n");
+	for (var i in lines) {
 			if (lines[i].indexOf(':') != -1) {
 				var cut = lines[i].split(":");
-				var c1 = cut[0].replace(/^\s+/g,'').replace(/\s+$/g,'');
-				var c2 = cut[1].replace(/^\s+/g,'').replace(/\s+$/g,'');
-				if (c1 != undefined && c2 != undefined) {
-					domini[c1] = c2;
+				if (cut[0] != undefined && cut[1] != undefined) {
+					domain[cut[0]] = cut[1];
 				}
 			}
 		}
 	});
 
 	query.on('close', function (code) {
-                callback(null, domini);
-        });
+    callback(null, domain);
+	});
 
 };
-
