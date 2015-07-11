@@ -14,4 +14,15 @@ whois2array.whois("octozon.com", function (err, data) {
         console.log(data);
     }
 }
-``` 
+```
+
+----
+## How to use:
+```
+npm install whois2array
+```
+
+----
+## Next ideas:
+Thinking about making cleaning according to the type tld.
+With the possibility of taking the array like now.
