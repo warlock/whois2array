@@ -7,9 +7,9 @@ exports.whois = function (domain, callback) {
 	query.stdout.setEncoding('utf8');
 
 	query.stdout.on('data', function (data) {
-  var str = data.toString();
-	var lines = str.split("\n");
-	for (var i in lines) {
+		var str = data.toString();
+		var lines = str.split("\n");
+		for (var i in lines) {
 			if (lines[i].indexOf(':') != -1) {
 				var cut = lines[i].split(":");
 				if (cut[0] != undefined && cut[1] != undefined) {
@@ -20,7 +20,6 @@ exports.whois = function (domain, callback) {
 	});
 
 	query.on('close', function (code) {
-    callback(null, domain);
+		callback(null, domain);
 	});
-
 };
