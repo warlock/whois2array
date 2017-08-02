@@ -1,6 +1,6 @@
 {
   "name": "whois2array",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Make array from whois",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,9 @@
     "json"
   ],
   "author": {
-    "name": "Josep Subils Rigau",
-    "email": "octozon@gmail.com",
-    "url": "http://octozon.com"
+    "name": "Josep Subils",
+    "email": "js@js.gl",
+    "url": "http://js.gl"
   },
   "license": "GPL",
   "bugs": {
@@ -33,7 +33,7 @@
   "_nodeVersion": "0.12.3",
   "_npmUser": {
     "name": "josep",
-    "email": "octozon@gmail.com"
+    "email": "js@js.gl"
   },
   "dist": {
     "shasum": "6ddb89e343a9b31a96371a74bc6f4bf8ae94face",
@@ -42,7 +42,7 @@
   "maintainers": [
     {
       "name": "josep",
-      "email": "octozon@gmail.com"
+      "email": "js@js.gl"
     }
   ],
   "directories": {},
