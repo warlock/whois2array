@@ -1,13 +1,18 @@
-## whois2array
-Simple Whois to Array for Node.Js
+# whois2array
+> Simple Whois to Array for Node.Js
+
+## How to install:
+```sh
+npm install whois2array
+```
 
 ----
 ## How to use:
 
 ```javascript
-var whois2array = require('whois2array');
+const whois2array = require('whois2array');
 
-whois2array.whois("octozon.com", function (err, data) {
+whois2array.whois("js.gl", (err, data) => {
     if (err) {
         console.log(err);
     } else {
@@ -16,21 +21,10 @@ whois2array.whois("octozon.com", function (err, data) {
 }
 ```
 
-----
-## How to install:
-```
-npm install whois2array
-```
-
-----
-## Next ideas:
-Thinking about making cleaning according to the type tld.
-With the possibility of taking the array like now.
-
 
 ## License
 ```
-The MIT License (MIT) Copyright (c) 2015 Josep Subils Rigau (josep@spellbook.io)
+The MIT License (MIT) Copyright (c) 2015 Josep Subils (js@js.gl)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
